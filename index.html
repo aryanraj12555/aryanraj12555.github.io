@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BakeryX Premium</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf5;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1509440159596-0249088772ff');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.btn {
+    background: #ffd700;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Sections */
+section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.card h3 {
+    margin: 1rem 0;
+}
+
+.price {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact {
+    background: #2d2d2d;
+    color: white;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 1rem;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#" class="logo">🍰 BakeryX</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1>Luxury Bakery Experience</h1>
+<p>Freshly baked. Beautifully crafted.</p>
+<a href="#menu" class="btn">Explore Menu</a>
+</div>
+</section>
+
+<section id="menu">
+<h2>Our Signature Items</h2>
+
+<div class="menu-grid">
+<div class="card">
+<h3>🍰 Cheesecake</h3>
+<p>Rich creamy delight</p>
+<div class="price">₹299</div>
+</div>
+
+<div class="card">
+<h3>🍩 Donuts</h3>
+<p>Soft & chocolaty</p>
+<div class="price">₹99</div>
+</div>
+
+<div class="card">
+<h3>🥐 Croissant</h3>
+<p>Flaky & buttery</p>
+<div class="price">₹149</div>
+</div>
+
+<div class="card">
+<h3>🍪 Cookies</h3>
+<p>Fresh baked daily</p>
+<div class="price">₹79</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Visit Us</h2>
+<p>📍 Mithapur, Bihar</p>
+<p>📞 +91 98765 43210</p>
+<p>🕒 7AM – 8PM</p>
+</section>
+
+<footer>
+<p>© 2026 BakeryX | Premium Taste Experience</p>
+</footer>
+
+</body>
+</html>
